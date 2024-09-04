@@ -7,13 +7,9 @@ class PyBridge:
     def __init__(self, domain=None) -> None:
         self.chunk = 1048576
 
-        self.directory = "projects"
-        self.username = "darkstartech"
-        self.token = '2bf3a19829dede7c15ddc19b9fd2ad511fe328fe'
-
-        self.directory = "hospital"
-        self.username = "darksideapp"
-        self.token = '7590f4acab3c6ff9bf5f3a57c3030ebf993e3bb8'
+        self.directory = ""
+        self.username = ""
+        self.token = ""
 
 
         if not domain:
