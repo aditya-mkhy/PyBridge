@@ -63,6 +63,6 @@ class DB:
 
 
 if __name__ == "__main__":
-    file = "./db.if"
+    file = "./data.db"
     database = DB(file)
     print(database.data)
