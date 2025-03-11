@@ -195,9 +195,10 @@ if __name__ == "__main__":
     # path = "c:/Users/darkw/Downloads/Project/"
     path = "C:/Users/darkw/OneDrive/Documents/mcare/"
 
-    # git.download(path)
-    git.upload(path)
-    # git.enable()
-    git.reload()
+    # git.download(path) # to downnload website from server
+    git.upload(path) # to upload file to server
+    # git.enable() # enable the website
+    # git.disable() # to disable the website
+    git.reload() # reload the website
 
        
