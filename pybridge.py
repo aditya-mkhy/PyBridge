@@ -4,12 +4,12 @@ import os
 from time import sleep
 
 class PyBridge:
-    def __init__(self, domain=None) -> None:
+    def __init__(self, username: str, token: str, directory: str = None, domain: str = None) -> None:
         self.chunk = 1048576
 
-        self.directory = ""
-        self.username = ""
-        self.token = ""
+        self.directory = directory
+        self.username = username
+        self.token = token
 
 
         if not domain:
@@ -184,7 +184,13 @@ class PyBridge:
         
 
 if __name__ == "__main__":
-    git = PyBridge()
+    username = ""
+    token = ""
+
+    git = PyBridge(
+        username = username,
+        token = token,
+    )
 
     # path = "c:/Users/darkw/Downloads/Project/"
     path = "C:/Users/darkw/OneDrive/Documents/mcare/"
