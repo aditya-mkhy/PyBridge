@@ -200,5 +200,3 @@ if __name__ == "__main__":
     # git.enable() # enable the website
     # git.disable() # to disable the website
     git.reload() # reload the website
-
-       
