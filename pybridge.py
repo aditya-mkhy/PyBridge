@@ -118,7 +118,7 @@ class PyBridge:
 
     
     def download(self, save_path, from_down_path = ''):
-        # url = f"{self.url}{from_down_path}"
+        url = f"{self.url}{from_down_path}"
         if not os.path.exists(save_path):
             log(f"Invalid Path : {save_path}")
             return False
