@@ -5,12 +5,14 @@ Lightweight, scriptable, and built for automating deploy / file-management tasks
 
 > Simple, no-frills utility to manage files on PythonAnywhere from local scripts.
 
----
+<br>
+
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
----
+<br>
+
 
 ## Features
 
@@ -20,7 +22,8 @@ Lightweight, scriptable, and built for automating deploy / file-management tasks
 - Simple local JSON-backed DB for tracking metadata.
 - Minimal dependencies — uses `requests` and standard library.
 
----
+<br>
+
 
 ## Project structure (important files)
 
@@ -34,14 +37,16 @@ PyBridge/
 ├─ LICENSE         # MIT license
 ```
 
----
+<br>
+
 
 ## Requirements
 
 - Python 3.9 or newer  
 - `requests` library
 
----
+<br>
+
 
 ## Quick start — example usage
 
@@ -76,7 +81,8 @@ pb.disable()  # disable the webapp
 
 > The API client builds requests to the PythonAnywhere API endpoints. Make sure your username and token are valid and have the permissions required for the operations you call.
 
----
+<br>
+
 
 ## Security & best practices
 
@@ -85,7 +91,8 @@ pb.disable()  # disable the webapp
 - This tool writes files to disk when downloading from the remote — review remote contents before executing in a production environment.
 - For CI or automation, use environment variables or a secure secret manager for the token.
 
----
+<br>
+
 
 ## Troubleshooting
 
@@ -94,7 +101,7 @@ pb.disable()  # disable the webapp
 - Slow transfers: try wired connection or ensure remote files are not extremely large.
 - If uploads appear to fail silently, run scripts from a terminal to see printed logs (util.log prints basic INFO messages).
 
----
+<br>
 
 ## Development
 
@@ -102,13 +109,13 @@ pb.disable()  # disable the webapp
 - `util.py` contains a tiny `log()` function — you can replace it with a logger if desired.
 - To extend: add CLI wrappers or click/argparse entry points for command-line usage.
 
----
+
 
 ## License
 
 MIT License — see the `LICENSE` file.
 
----
+
 
 ## Credits
 
