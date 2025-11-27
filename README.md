@@ -109,13 +109,14 @@ pb.disable()  # disable the webapp
 - `util.py` contains a tiny `log()` function — you can replace it with a logger if desired.
 - To extend: add CLI wrappers or click/argparse entry points for command-line usage.
 
+<br>
 
 
 ## License
 
 MIT License — see the `LICENSE` file.
 
-
+<br>
 
 ## Credits
 
