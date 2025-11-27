@@ -10,7 +10,6 @@ Lightweight, scriptable, and built for automating deploy / file-management tasks
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
-
 <br>
 
 
@@ -21,7 +20,6 @@ Lightweight, scriptable, and built for automating deploy / file-management tasks
 - Enable / disable / reload a webapp via PythonAnywhere API.
 - Simple local JSON-backed DB for tracking metadata.
 - Minimal dependencies — uses `requests` and standard library.
-
 <br>
 
 
@@ -36,7 +34,6 @@ PyBridge/
 ├─ README.md       # (this file)
 ├─ LICENSE         # MIT license
 ```
-
 <br>
 
 
@@ -44,7 +41,6 @@ PyBridge/
 
 - Python 3.9 or newer  
 - `requests` library
-
 <br>
 
 
@@ -80,7 +76,6 @@ pb.disable()  # disable the webapp
 ```
 
 > The API client builds requests to the PythonAnywhere API endpoints. Make sure your username and token are valid and have the permissions required for the operations you call.
-
 <br>
 
 
@@ -90,7 +85,6 @@ pb.disable()  # disable the webapp
 - Run the tool only against accounts/webapps you control or trust.
 - This tool writes files to disk when downloading from the remote — review remote contents before executing in a production environment.
 - For CI or automation, use environment variables or a secure secret manager for the token.
-
 <br>
 
 
@@ -100,7 +94,6 @@ pb.disable()  # disable the webapp
 - `Permission` or `401/403` responses: check your API token permissions on PythonAnywhere.
 - Slow transfers: try wired connection or ensure remote files are not extremely large.
 - If uploads appear to fail silently, run scripts from a terminal to see printed logs (util.log prints basic INFO messages).
-
 <br>
 
 ## Development
@@ -108,16 +101,13 @@ pb.disable()  # disable the webapp
 - `db.py` contains simple helpers for reading/writing local DB (`data.db`).
 - `util.py` contains a tiny `log()` function — you can replace it with a logger if desired.
 - To extend: add CLI wrappers or click/argparse entry points for command-line usage.
-
 <br>
 
 
 ## License
 
 MIT License — see the `LICENSE` file.
-
 <br>
-
 ## Credits
 
 Developed as a compact helper to manage PythonAnywhere-hosted projects and files.
